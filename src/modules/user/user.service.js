@@ -1,12 +1,12 @@
 const userRepository = require('./user.repository')
 
-const findAll = async () => await userRepository.findAll()
+const findAll = async () => userRepository.findAll()
 const findById = (id) => userRepository.findById(id)
 const findByName = (name) => userRepository.findByName(name)
-const create = async (user) => await userRepository.create(user)
-const deleteById = async (id) => await userRepository.deleteById(id)
-const deleteAll = async () => await userRepository.deleteAll()
-const update = async (id, user) => await userRepository.update(id, user)
+const create = async (user) => userRepository.create(user)
+const deleteById = async (id) => userRepository.deleteById(id)
+const deleteAll = async () => userRepository.deleteAll()
+const update = async (id, user) => userRepository.update(id, user)
 
 module.exports = {
   findAll,
@@ -15,5 +15,5 @@ module.exports = {
   create,
   deleteById,
   deleteAll,
-  update
+  update,
 }

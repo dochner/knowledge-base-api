@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A knowledge base backend built for scholar purposes",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon --exec sucrase-node app.js"
   },
   "keywords": [
     "express",
@@ -23,7 +23,12 @@
     "passport-jwt": "^4.0.0"
   },
   "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "knex": "^2.2.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "sucrase": "^3.25.0"
   }
 }

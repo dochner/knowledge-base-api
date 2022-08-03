@@ -25,8 +25,8 @@ const deleteAll = async () => {
 }
 
 const update = async (id, user) => {
-    userEntity.updateOne({ _id: id }, user)
-    return userEntity.findById(id)
+  userEntity.updateOne({ _id: id }, user)
+  return userEntity.findById(id)
 }
 
 module.exports = {
@@ -36,5 +36,5 @@ module.exports = {
   create,
   deleteById,
   deleteAll,
-  update
+  update,
 }

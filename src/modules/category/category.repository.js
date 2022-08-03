@@ -25,8 +25,8 @@ const deleteAll = async () => {
 }
 
 const update = async (id, category) => {
-    categoryEntity.updateOne({ _id: id }, category)
-    return categoryEntity.findById(id).populate('parentId')
+  categoryEntity.updateOne({ _id: id }, category)
+  return categoryEntity.findById(id).populate('parentId')
 }
 
 module.exports = {
@@ -36,5 +36,5 @@ module.exports = {
   create,
   deleteById,
   deleteAll,
-  update
+  update,
 }
