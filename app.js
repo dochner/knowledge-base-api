@@ -30,6 +30,11 @@ app.use(
 
 app.options('*', cors())
 
+app.use(express.static('./public'))
+app.get('/', (req, res) => {
+  res.sendFile('./public/index.html')
+})
+
 consign()
   .include('./src/infrastructure/mongoose.js')
   .then('./src/modules/user/user.controller.js')
